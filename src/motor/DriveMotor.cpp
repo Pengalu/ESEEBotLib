@@ -1,8 +1,13 @@
-// Nathan Shelburn (Pengalu), 2024. See license for usage permissions. Thank you!
+/*
+  DriveMotor.cpp - library for interfacing with the H-Bridge simply. Allows easy directional control.
+  Created by Nathan "Pengalu" Shelburn, February 22, 2024.
+  See license for usage permissions. Thank you!
+*/
+
 // Power is supplied by the Vin pin from the aduino to the VCC pin on the bridge. The bridge can operate from about 2 to 10 volts.
 // Ground to Arduino ground pin.
 
-// The DriveMotor class is an interface to the H-Bridge to allow easier directional control.
+
 
 
 // PWM default numbers.
@@ -28,8 +33,7 @@ int motorIn4 = 5;
 
 DriveMotor::DriveMotor(int pin1, int pin2) {
  
-  pinMode(pin1,OUTPUT); // Set up pins for output to H-Bridge
-  pinMode(pin2,OUTPUT);
+
  // pinMode(motorIn3,OUTPUT)
  // pinMode(motorIn4,OUTPUT)
   _pin1=pin1;
@@ -37,10 +41,16 @@ DriveMotor::DriveMotor(int pin1, int pin2) {
 
 }
 
+void DriveMotor::start(){
+  pinMode(_pin1,OUTPUT); // Set up pins for output to H-Bridge
+  pinMode(_pin2,OUTPUT);
+}
+
+
 // Drives the motor in a direction.
 // Directions:
 // 1 : Forward, 0 : Stop Driving, -1 : Reverse.
-// Motors:
+
 
 void DriveMotor::driveDirection (int direction){
 
