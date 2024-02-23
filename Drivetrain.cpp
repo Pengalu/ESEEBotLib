@@ -2,8 +2,8 @@
 // The Drivetrain class is an interface for driving two DriveMotors. It allows for turning and driving with single functions.
 
 #include "Arduino.h"
-#include "DriveMotor.h"
-#include "Drivetrain.h"
+#include "ESEEBotLib.h"
+
 
 Drivetrain::Drivetrain(DriveMotor* motor1, DriveMotor* motor2){
   _motor1=motor1;

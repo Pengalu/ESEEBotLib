@@ -18,8 +18,7 @@ int motorIn3 = 4; // Motor 2
 int motorIn4 = 5;
 */
 #include "Arduino.h"
-#include "DriveMotor.h"
-
+#include "ESEEBotLib.h"
 
 // I/O
 // In1/In2 controls Motor 1 while In3/In4 controls Motor 2
