@@ -14,13 +14,13 @@ class DriveMotor {
 class Drivetrain
 {
 
-public:
-    Drivetrain(DriveMotor *motor1, DriveMotor *motor2);
-    void drive(int direction);
-    void turn(int direction);
+    public:
+        Drivetrain(DriveMotor *motor1, DriveMotor *motor2);
+        void drive(int direction);
+        void turn(int direction);
 
-private:
-    DriveMotor *_motor1;
-    DriveMotor *_motor2;
+    private:
+        DriveMotor *_motor1;
+        DriveMotor *_motor2;
 };
 #endif
