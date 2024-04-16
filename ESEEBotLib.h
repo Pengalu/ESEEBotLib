@@ -23,4 +23,16 @@ class Drivetrain
         DriveMotor *_motor1;
         DriveMotor *_motor2;
 };
+class Distance
+{
+
+    public:
+        Distance(int trigPin, int echoPin);
+        void start();
+        double getDistance();
+
+    private:
+        int _trigPin;
+        int _echoPin;
+};
 #endif

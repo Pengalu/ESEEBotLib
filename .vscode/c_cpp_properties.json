@@ -4,15 +4,16 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino", // Fixed typo here
-                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/EEPROM/src",
-                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/HID/src",
-                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src",
-                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src",
-                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src",
-                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SPI/src",
-                "C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard" // TODO: this needs to change depending on the board youre compiling for DONT COMPILE THRU VSCODE, USE THE ARDUINO IDE
-                
+                "/usr/share/arduino/hardware/arduino/avr/cores/arduino",
+                "/usr/share/arduino/hardware/arduino/avr/libraries/EEPROM/src",
+                "/usr/share/arduino/hardware/arduino/avr/libraries/HID/src",
+                "/usr/share/arduino/hardware/arduino/avr/libraries/SoftwareSerial/src",
+                "/usr/share/arduino/hardware/arduino/avr/libraries/SPI/src",
+                "/usr/share/arduino/hardware/arduino/avr/libraries/Wire/src",
+                "/usr/share/arduino/hardware/arduino/avr/libraries/SPI/src",
+                "/usr/share/arduino/hardware/arduino/avr/variants/standard",
+                "/usr/share/arduino/hardware/tools/avr/**",
+                "/usr/share/man/man3/"
             ],
             "defines": [
                 "_DEBUG",
@@ -23,7 +24,7 @@
                 "ARDUINO_AVR_UNO",
                 "ARDUINO_ARCH_AVR"
             ],
-            "compilerPath": "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-gcc.exe",
+            "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64"
